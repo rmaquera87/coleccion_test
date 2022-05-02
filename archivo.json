@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "159ac769-055e-4803-8b9f-3b3a56076341",
+		"name": "Sincronizacion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Listar Tala",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzb3BvcnRlX3NoYXJlcG9pbnRAdmFsdHgucGUiLCJpYXQiOjE2NTEyNjI0MDIsImV4cCI6MTY1MTI2NjAwMn0.s6VwkKEKdQyOOxPuz_6uG1z0T4q8Qw2hD21yFK_IvUQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"idPlanManejo\": 2592,\r\n  \"idSincronizacion\": 1,\r\n  \"idUsuarioRegistro\": 387\r\n}",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/mcsniffs-rest/api/tala/listarTala",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"mcsniffs-rest",
+						"api",
+						"tala",
+						"listarTala"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Tala Detalle",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzb3BvcnRlX3NoYXJlcG9pbnRAdmFsdHgucGUiLCJpYXQiOjE2NTEyNjI0MDIsImV4cCI6MTY1MTI2NjAwMn0.s6VwkKEKdQyOOxPuz_6uG1z0T4q8Qw2hD21yFK_IvUQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"idSincronizacion\": 1,\r\n  \"idTala\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/mcsniffs-rest/api/tala/listarTalaDetalle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"mcsniffs-rest",
+						"api",
+						"tala",
+						"listarTalaDetalle"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
